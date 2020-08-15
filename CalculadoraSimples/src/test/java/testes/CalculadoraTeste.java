@@ -24,9 +24,14 @@ class CalculadoraTeste {
 	}
 	
 	@Test
-	@DisplayName("Subtração")
+	@DisplayName("Subtração de Positivos")
 	void testSubtracaoNumerosPositivos_ResultadoPositivo() {
 		assertEquals(1, calc.subtracao(2,  1));
 	}
 
+	@Test
+	@DisplayName("Subtração de Negativos")
+	void testSubtracaoNumerosNegativo_ResultadoNegativo() {
+		assertEquals(-1, calc.subtracao(-3,  -2));
+	}
 }
